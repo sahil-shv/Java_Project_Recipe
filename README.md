@@ -60,10 +60,3 @@ RecipeShare/
 - Prepared statements prevent SQL injection.
 - Session validation is performed on sensitive servlet actions.
 
-## Testing Checklist
-- Register/login/logout flow
-- Add recipe and ensure it appears on `recipes.jsp`
-- View recipe details and submit comments
-- Try posting without authentication to verify redirects
-
-Enjoy sharing recipes!
