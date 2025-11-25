@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>RecipeShare</display-name>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddRecipeServlet</servlet-name>
+        <servlet-class>servlet.AddRecipeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddRecipeServlet</servlet-name>
+        <url-pattern>/addRecipe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RecipeListServlet</servlet-name>
+        <servlet-class>servlet.RecipeListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecipeListServlet</servlet-name>
+        <url-pattern>/recipes</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewRecipeServlet</servlet-name>
+        <servlet-class>servlet.ViewRecipeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewRecipeServlet</servlet-name>
+        <url-pattern>/viewRecipe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddCommentServlet</servlet-name>
+        <servlet-class>servlet.AddCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddCommentServlet</servlet-name>
+        <url-pattern>/addComment</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
